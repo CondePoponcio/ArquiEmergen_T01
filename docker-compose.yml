@@ -2,7 +2,6 @@ version: '3.9'
 
 services:
     mininet:
-        platform: linux/amd64
         image: containernet/containernet
         container_name: containernet
         environment:
@@ -10,7 +9,7 @@ services:
         pid: "host"
         cap_add:
             - ALL
-        command: tail -f /dev/null
+        command: /bin/bash
         privileged: true
         volumes:
             - "/var/run/docker.sock:/var/run/docker.sock"

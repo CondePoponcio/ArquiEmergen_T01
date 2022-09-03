@@ -2,10 +2,11 @@ FROM containernet/containernet
 
 RUN apt update
 
-RUN apt install -y
+RUN apt install -y x11-xserver-utils
 
-RUN apt install -y linux-image-amd64 linux-headers-amd64
+RUN apt install -y ifupdown net-tools
 
-RUN apt install --reinstall wireguard-dkms
+RUN echo "nameserver 8.8.8.8" >> /etc/resolv.conf
+RUN echo "nameserver 8.8.4.4" >> /etc/resolv.conf
 
-CMD ["bash"]
+#RUN xhost +si:localuser:root
