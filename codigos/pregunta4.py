@@ -14,8 +14,8 @@ info('*** Adding controller\n')
 net.addController('c0')
 info('*** Adding docker containers\n')
 
-h1 = net.addDocker('h1', dimage="robertxie/ubuntu-nettools")
-h2 = net.addDocker('h2', dimage="robertxie/ubuntu-nettools")
+h1 = net.addDocker('h1', dimage="kunt-host")
+h2 = net.addDocker('h2', dimage="kunt-host")
 
 info('*** Adding switches\n')
 s1 = net.addSwitch('s1')
