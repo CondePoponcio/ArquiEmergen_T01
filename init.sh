@@ -1,3 +1,1 @@
 sudo docker run --name containernet -it --rm --privileged --cap-add=SYS_MODULE --cap-add=SYS_NICE --cap-add=NET_ADMIN --network="host" --pid='host' -v /var/run/docker.sock:/var/run/docker.sock -v /lib/modules:/lib/modules -v /tmp/.X11-unix:/tmp/.X11-unix -v $(pwd)/codigos:/containernet/testing/ -e DISPLAY=$DISPLAY kunt-net /bin/bash 
-
-#-c "sudo mn --custom /containernet/testing/tarea.py --topo mytopo"
