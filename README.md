@@ -17,7 +17,7 @@ Felipe Condore
 
 ### Version
 
-2.4.1
+1.0.0
 
 ### License
 
