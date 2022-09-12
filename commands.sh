@@ -1,1 +1,0 @@
-service openvswitch-switch start
